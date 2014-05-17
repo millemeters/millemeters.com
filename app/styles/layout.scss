@@ -89,49 +89,47 @@ body {
 
 /* pages */
 
-#hero {
+.hero-page {
     background: yellow;
 }
 
-#image-1 {
+.image-1-page {
     background: red;
 }
 
-#user-research {
+.user-research-page {
     background: lime;
 }
 
-html.side .side-page {
-    background: black;
-    color: white;
-}
-
-
-#analysis {
+.analysis-page {
     background: magenta;
 }
 
-#communication {
+.communication-page {
     background: #ddd;
 }
 
-#conceptualization {
+.conceptualization-page {
     background: white;
 }
 
-#image-2 {
+.image-2-page {
     background: red;
 }
 
-
-#process {
+.process-page {
     background: black;
 }
 
-#design {
+.design-page {
     background: yellow;
 }
 
-#contact {
+.contact-page {
     background: white;
+}
+
+/* side pages */
+
+html.side .side-page {
 }
