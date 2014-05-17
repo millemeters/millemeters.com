@@ -2,7 +2,8 @@
   "name": "millemeters",
   "private": true,
   "dependencies": {
-    "jquery": "~1.11.0"
+    "jquery": "~1.11.0",
+    "jquery-disablescroll": "https://github.com/ultrapasty/jquery-disablescroll.git"
   },
   "devDependencies": {}
 }
