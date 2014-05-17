@@ -1,14 +1,14 @@
 $(document).ready(function() {
     console.log('\'Allo \'Allo!');
 
-    $('#tell-me-more').on('click', function() {
+    $('.tell-me-more').on('click', function() {
         $('html').addClass('side');
-        $('.pages').disablescroll();
+        $('.pages').addClass('not-scrollable');
     });
 
-    $('#tell-me-less').on('click', function() {
+    $('.tell-me-less').on('click', function() {
         $('html').removeClass('side');
-        $('.pages').disablescroll('undo');
+        $('.pages').removeClass('not-scrollable');
     });
 
 });
