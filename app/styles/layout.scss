@@ -1,0 +1,91 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.page {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    min-height: 100%;
+
+    .inner-page {
+        padding: 20px;
+    }
+}
+
+/* styles */
+body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.page {
+    font-size: 1.8em;
+}
+#menu {
+    background: white;
+    height: 40px;
+    padding: 20px 30px 10px;
+
+    #menu-contact {
+        display: block;
+        float: right;
+    }
+
+    #logo {
+        float: left;
+    }
+}
+
+
+/* pages */
+
+#hero {
+    background: yellow;
+}
+
+#image-1 {
+    background: red;
+}
+
+#user-research {
+    background: lime;
+}
+
+#analysis {
+    background: magenta;
+}
+
+#communication {
+    background: #ddd;
+}
+
+#conceptualization {
+    background: white;
+}
+
+#image-2 {
+    background: red;
+}
+
+
+#process {
+    background: black;
+}
+
+#design {
+    background: yellow;
+}
+
+#contact {
+    background: white;
+}
