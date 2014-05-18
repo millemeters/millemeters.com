@@ -1,3 +1,5 @@
+$durationSlideInAnimation: 0.5s;
+
 html {
     height: 100%;
 }
@@ -30,6 +32,12 @@ body {
     padding: 20px;
 }
 
+.side-page {
+    display: none;
+}
+
+/* show side-page */
+
 html.side {
     overflow-x: hidden;
     height: 100%
@@ -44,10 +52,17 @@ html.side .pages {
     position: absolute;
     right: 80%;
     width: 100%;
+
+    animation: slide-out-page $durationSlideInAnimation;
 }
 
-.side-page {
-    display: none;
+@keyframes slide-out-page {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 80%;
+  }
 }
 
 html.side .side-page {
@@ -63,7 +78,33 @@ html.side .side-page {
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+
+    animation: slide-in-side-page $durationSlideInAnimation;
 }
+
+@keyframes slide-in-side-page {
+  0% {
+    margin-right: -80%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+/*
+html.side .side-page .inner-page {
+    animation: slide-in-inner-side-page $durationSlideInAnimation;
+}
+
+
+@keyframes slide-in-inner-side-page {
+  0% {
+    margin-right: -180%
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+*/
 
 .not-scrollable {
     overflow-y: hidden;
