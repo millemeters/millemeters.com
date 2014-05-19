@@ -30,7 +30,7 @@ $(document).ready(function(){
         var $bgobj = $(this); // assigning the object
              
         $('.pages').scroll(function() {
-            var yPos = ($('.pages').scrollTop() / 4);
+            var yPos = ($('.pages').scrollTop() / 2);
              
             // Put together our final background position
             var coords = yPos + 'px';
