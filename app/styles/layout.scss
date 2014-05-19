@@ -1,4 +1,4 @@
-$durationSlideInAnimation: 0.5s;
+$durationSlideInAnimation: 0.1s;
 
 html {
     height: 100%;
@@ -25,7 +25,7 @@ body {
     padding: 0;
     margin: auto;
     width: 100%;
-    min-height: 100%;
+    min-height: 200%;
 }
 
 .inner-page {
@@ -114,6 +114,7 @@ html.side .side-page .inner-page {
 body {
     background: #fafafa;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
     color: #333;
 }
 
@@ -121,6 +122,8 @@ body {
     font-size: 1.8em;
 }
 #menu {
+    font-weight: 100;
+    font-size: 0.8em;
     background: white;
     height: 40px;
     padding: 20px 30px 10px;
@@ -128,34 +131,103 @@ body {
     #menu-contact {
         display: block;
         float: right;
+        text-decoration: none;
+        border: 0;
     }
 
     #logo {
         float: left;
+
+        #my-name {
+            font-weight: 400;
+        }
     }
 }
 
+h1 {
+    font-weight: 100;
+    text-transform:uppercase;
+    letter-spacing: 0.0625em;
+    margin-bottom: 0;
+}
+
+h2 {
+    letter-spacing: 0.04em;
+    font-weight: 100;
+    margin-top:0;
+    font-size: 1em;
+}
+
+p {
+    margin-top: 2em;
+    line-height: 1.5;
+}
+
+.pages {
+    a {
+        color: #333;
+        border-bottom: 2px solid #999;
+        background: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        border-top: 2px solid #999;
+        border-bottom: none;
+    }
+}
 
 /* pages */
 
 .hero-page {
-    background: yellow;
+    background: url('../images/00-hero.jpg') no-repeat;
+    background-size:cover;
+
+    h1 {
+        text-transform: none;
+        letter-spacing: inherit;
+        font-weight: 200;
+        margin-top: 2.5em;
+        color: white;
+    }
 }
 
 .image-1-page {
-    background: red;
+    background: white;
 }
 
 .user-research-page {
-    background: lime;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.23, #FFFFFF),
+        color-stop(1, #CFFFFF)
+    );
+    background-image: -o-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: linear-gradient(to bottom, #FFFFFF 23%, #CFFFFF 100%);
 }
 
 .analysis-page {
-    background: magenta;
+    background: white;
 }
 
 .communication-page {
-    background: #ddd;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.19, #C9FFDD),
+        color-stop(0.68, #FFEDFE)
+    );
+    background-image: -o-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: -moz-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: -webkit-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: -ms-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: linear-gradient(to bottom, #C9FFDD 19%, #FFEDFE 68%);
 }
 
 .conceptualization-page {
@@ -163,19 +235,52 @@ body {
 }
 
 .image-2-page {
-    background: red;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.23, #FFFFFF),
+        color-stop(1, #CFFFFF)
+    );
+    background-image: -o-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
+    background-image: linear-gradient(to bottom, #FFFFFF 23%, #CFFFFF 100%);
 }
 
 .process-page {
-    background: black;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.19, #C9FFDD),
+        color-stop(0.68, #FFEDFE)
+    );
+    background-image: -o-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: -moz-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: -webkit-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: -ms-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background-image: linear-gradient(to bottom, #C9FFDD 19%, #FFEDFE 68%);
 }
 
 .design-page {
-    background: yellow;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.18, #CFFFFF),
+        color-stop(0.69, #C9FFDD)
+    );
+    background-image: -o-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
+    background-image: -moz-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
+    background-image: -webkit-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
+    background-image: -ms-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
+    background-image: linear-gradient(to bottom, #CFFFFF 18%, #C9FFDD 69%);
 }
 
 .contact-page {
-    background: white;
+    background: black;
 }
 
 /* side pages */

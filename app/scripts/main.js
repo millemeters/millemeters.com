@@ -24,3 +24,19 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function(){
+    $('.hero-page').each(function(){
+        var $bgobj = $(this); // assigning the object
+             
+        $('.pages').scroll(function() {
+            var yPos = ($('.pages').scrollTop() / 4);
+             
+            // Put together our final background position
+            var coords = yPos + 'px';
+ 
+            // Move the background
+            $bgobj.css({'background-position-y': coords });
+        });
+    });
+});
