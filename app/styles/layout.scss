@@ -193,6 +193,7 @@ p {
 
 .user-research-page {
     position: relative;
+    padding-bottom: 10%;
 
     background-image: -webkit-gradient(
         linear,
@@ -246,14 +247,14 @@ p {
 
     p {
         position: absolute;
-        bottom: 0;
+        bottom: 7%;
         font-weight: 100;
-        font-size: 0.8em;
         color: white;
         letter-spacing: 0.05em;
         margin: 0 12% 2%;
         font-size: 0.6em;
-        opacity: 0.8;
+        opacity: 0.9;
+        text-align: justify;
 
         a {
             background: none;
@@ -265,6 +266,12 @@ p {
         width:80%;
         margin:10% 10% 0;
     }
+}
+
+.intermission-1-page {
+    min-height: 80%;
+    background: url('../images/02-intermission-1.jpg') no-repeat;
+    background-size:cover;
 }
 
 .analysis-page {
