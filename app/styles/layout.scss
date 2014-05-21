@@ -120,6 +120,29 @@ body {
 
 .page {
     font-size: 1.8em;
+    font-weight: 100;
+
+    h1 {
+        font-weight: 100;
+        text-transform:uppercase;
+        letter-spacing: 0.0625em;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-weight: 100;
+        letter-spacing: 0.04em;
+        margin-top:0;
+        font-size: 1em;
+    }
+
+    p {
+        font-weight: 100;
+        margin-top: 2em;
+        line-height: 1.5;
+    }
+
+
 }
 #menu {
     font-weight: 100;
@@ -142,25 +165,6 @@ body {
             font-weight: 400;
         }
     }
-}
-
-h1 {
-    font-weight: 100;
-    text-transform:uppercase;
-    letter-spacing: 0.0625em;
-    margin-bottom: 0;
-}
-
-h2 {
-    letter-spacing: 0.04em;
-    font-weight: 100;
-    margin-top:0;
-    font-size: 1em;
-}
-
-p {
-    margin-top: 2em;
-    line-height: 1.5;
 }
 
 .pages {
@@ -208,6 +212,28 @@ p {
     background-image: -ms-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
     background-image: linear-gradient(to bottom, #FFFFFF 23%, #CFFFFF 100%);
 
+    p {
+        position: absolute;
+        bottom: 7%;
+        font-weight: 100;
+        color: white;
+        letter-spacing: 0.05em;
+        margin: 0 12% 2%;
+        font-size: 0.6em;
+        opacity: 0.9;
+        text-align: justify;
+
+        a {
+            background: none;
+            color: white;
+        }
+    }
+
+    img {
+        width:80%;
+        margin:10% 10% 0;
+    }
+
     .inner-page {
         position: absolute;
         margin: 10%;
@@ -244,28 +270,6 @@ p {
             }
         }
     }
-
-    p {
-        position: absolute;
-        bottom: 7%;
-        font-weight: 100;
-        color: white;
-        letter-spacing: 0.05em;
-        margin: 0 12% 2%;
-        font-size: 0.6em;
-        opacity: 0.9;
-        text-align: justify;
-
-        a {
-            background: none;
-            color: white;
-        }
-    }
-
-    img {
-        width:80%;
-        margin:10% 10% 0;
-    }
 }
 
 .intermission-1-page {
@@ -274,27 +278,85 @@ p {
     background-size:cover;
 }
 
-.analysis-page {
+.analyze-page {
     background: white;
+    background: url('../images/03-analyze.jpg') no-repeat;
+    background-size:cover;
+    color: white;
 }
 
-.communication-page {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.19, #C9FFDD),
-        color-stop(0.68, #FFEDFE)
-    );
-    background-image: -o-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: -moz-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: -webkit-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: -ms-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: linear-gradient(to bottom, #C9FFDD 19%, #FFEDFE 68%);
+.intermission-2-page {
+    min-height: 100%;
+    background: url('../images/04-intermission-2.jpg') no-repeat;
+    background-size:cover;
 }
 
-.conceptualization-page {
+.communicate-page {
+    background: black;
+    position: relative;
+    padding-bottom: 10%;
+
+    img {
+        width:80%;
+        margin:10% 10% 0;
+    }
+
+    p {
+        font-weight: 100;
+        color: white;
+        letter-spacing: 0.05em;
+        margin: 0 12% 2%;
+        font-size: 0.7em;
+        opacity: 0.8;
+        text-align: justify;
+
+        a {
+            background: none;
+            color: white;
+        }
+    }
+
+    .inner-page {
+        position: absolute;
+        margin: 10%;
+
+        .title {
+            margin-top: 60px;
+
+            h1 {
+                padding: 14px 14px 10px;
+                display: inline;
+
+                color: white;
+                background: black;
+
+                font-size: 0.8em;
+                font-weight: 200;
+                letter-spacing: 0.2em;
+            }
+        }
+
+        .sub-title {
+            margin-top: 30px;
+            h2 {
+                padding: 8px 14px 10px;
+                display: inline;
+
+                color: white;
+                background: black;
+
+                font-size: 0.8em;
+                font-weight: 100;
+            }
+        }        
+    }
+}
+
+.conceptualize-page {
     background: white;
+    background: url('../images/06-conceptualize.jpg') no-repeat;
+    background-size:cover;
+    color: white;
 }
 
 .image-2-page {
