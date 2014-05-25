@@ -20,12 +20,10 @@ body {
 }
 
 .page {
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
     padding: 0;
     margin: auto;
     width: 100%;
-    min-height: 100%;
+    min-height: 110%;
 }
 
 .inner-page {
@@ -122,6 +120,8 @@ body {
     font-size: 1.8em;
     font-weight: 100;
 
+    overflow-x: hidden;
+
     h1 {
         font-weight: 100;
         text-transform:uppercase;
@@ -197,85 +197,23 @@ body {
 
 .user-research-page {
     position: relative;
-    padding-bottom: 10%;
 
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.23, #FFFFFF),
-        color-stop(1, #CFFFFF)
-    );
-    background-image: -o-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: -moz-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: -webkit-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: -ms-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: linear-gradient(to bottom, #FFFFFF 23%, #CFFFFF 100%);
+    margin: 5%;
+    width: 90%;
 
-    p {
-        position: absolute;
-        bottom: 7%;
-        font-weight: 100;
-        color: white;
-        letter-spacing: 0.05em;
-        margin: 0 12% 2%;
-        font-size: 0.6em;
-        opacity: 0.9;
-        text-align: justify;
-
-        a {
-            background: none;
-            color: white;
-        }
-    }
-
-    img {
-        width:80%;
-        margin:10% 10% 0;
-    }
+    background: url('../images/01-user-research.jpg') no-repeat;
+    background-size:cover;
+    background-position-y: 72%;
+    background-color: white;
 
     .inner-page {
         position: absolute;
-        margin: 10%;
+        bottom: 0;
+        padding-bottom: 0;
 
-        font-size: 0.8em;
-
-        .title {
-            margin-top: 60px;
-
-            h1 {
-                padding: 14px 14px 10px;
-                display: inline;
-
-                color: black;
-                background: white;
-
-                font-size: 0.8em;
-                font-weight: 200;
-                letter-spacing: 0.2em;
-            }
-        }
-
-        .sub-title {
-            margin-top: 30px;
-            h2 {
-                padding: 8px 14px 10px;
-                display: inline;
-
-                color: black;
-                background: white;
-
-                font-size: 0.8em;
-                font-weight: 100;
-            }
-        }
+        color: white;
+        margin-bottom: 5%;
     }
-}
-
-.intermission-1-page {
-    min-height: 80%;
-    background: url('../images/02-intermission-1.jpg') no-repeat;
-    background-size:cover;
 }
 
 .analyze-page {
@@ -286,126 +224,81 @@ body {
 }
 
 .intermission-2-page {
-    min-height: 100%;
-    background: url('../images/04-intermission-2.jpg') no-repeat;
-    background-size:cover;
+    min-height: inherit;
+
+    background-color: black;
+    img {
+        width: 80%;
+        margin: 10%;
+    }
 }
 
 .communicate-page {
     background: black;
+    background: url('../images/05-communicate.jpg') no-repeat;
+    background-size:cover;
+    background-position-y: 20%;
+
+    margin-top: 6%;
     position: relative;
-    padding-bottom: 10%;
 
-    img {
-        width:80%;
-        margin:10% 10% 0;
-    }
-
-    p {
-        font-weight: 100;
-        color: white;
-        letter-spacing: 0.05em;
-        margin: 0 12% 2%;
-        font-size: 0.7em;
-        opacity: 0.8;
-        text-align: justify;
-
-        a {
-            background: none;
-            color: white;
-        }
-    }
+    color: black;
 
     .inner-page {
         position: absolute;
-        margin: 10%;
-
-        .title {
-            margin-top: 60px;
-
-            h1 {
-                padding: 14px 14px 10px;
-                display: inline;
-
-                color: white;
-                background: black;
-
-                font-size: 0.8em;
-                font-weight: 200;
-                letter-spacing: 0.2em;
-            }
-        }
-
-        .sub-title {
-            margin-top: 30px;
-            h2 {
-                padding: 8px 14px 10px;
-                display: inline;
-
-                color: white;
-                background: black;
-
-                font-size: 0.8em;
-                font-weight: 100;
-            }
-        }        
+        bottom: 5%;
     }
 }
 
 .conceptualize-page {
-    background: white;
+    background: black;
     background: url('../images/06-conceptualize.jpg') no-repeat;
     background-size:cover;
     color: white;
 }
 
-.image-2-page {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.23, #FFFFFF),
-        color-stop(1, #CFFFFF)
-    );
-    background-image: -o-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: -moz-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: -webkit-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: -ms-linear-gradient(bottom, #FFFFFF 23%, #CFFFFF 100%);
-    background-image: linear-gradient(to bottom, #FFFFFF 23%, #CFFFFF 100%);
-}
-
 .process-page {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.19, #C9FFDD),
-        color-stop(0.68, #FFEDFE)
-    );
-    background-image: -o-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: -moz-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: -webkit-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: -ms-linear-gradient(bottom, #C9FFDD 19%, #FFEDFE 68%);
-    background-image: linear-gradient(to bottom, #C9FFDD 19%, #FFEDFE 68%);
+    background: black;
+    background: url('../images/08-process.jpg') no-repeat;
+    background-size:cover;
+    color: white;
 }
 
 .design-page {
-    background-image: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0.18, #CFFFFF),
-        color-stop(0.69, #C9FFDD)
-    );
-    background-image: -o-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
-    background-image: -moz-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
-    background-image: -webkit-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
-    background-image: -ms-linear-gradient(bottom, #CFFFFF 18%, #C9FFDD 69%);
-    background-image: linear-gradient(to bottom, #CFFFFF 18%, #C9FFDD 69%);
+    background: black;
+    background: url('../images/09-design.jpg') no-repeat;
+    background-size:cover;
+    color: white;
 }
 
 .contact-page {
-    background: black;
+    position: relative;
+    background-color: black;
+    min-height: 70%;
+    color: white;
+    background: url('../images/10-contact.jpg') no-repeat;
+    background-position: center bottom;
+    background-size:cover;
+
+    .inner-page {
+        padding: 9%;
+        padding-bottom: 0;
+        .contact-details {
+            margin-top: 28%;
+            padding-bottom: 4%;
+            margin-bottom: 0;
+        }
+
+        a {
+            border: none;
+            background: none;
+            color: white;
+        }
+
+        a:hover, a:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
 /* side pages */
