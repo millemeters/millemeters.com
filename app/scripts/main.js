@@ -1,3 +1,5 @@
+var iPad = navigator.platform.indexOf('iPad') !== -1;
+
 function hideSidePage() {
     $('html').removeClass('side');
     $('.pages').removeClass('not-scrollable');
@@ -8,24 +10,7 @@ function showSidePage() {
     $('.pages').addClass('not-scrollable');
 }
 
-$(document).ready(function() {
-    console.log('\'Allo \'Allo!');
-
-    $('.tell-me-more').on('click', showSidePage);
-
-    $('.user-research-page').swipe({
-        swipeLeft: showSidePage
-    });
-
-    $('.tell-me-less').on('click', hideSidePage);
-
-    $('.side-page').swipe({
-        swipeRight: hideSidePage
-    });
-
-});
-
-$(document).ready(function(){
+function setupParallax() {
     $('.hero-page').each(function(){
         var $bgobj = $(this); // assigning the object
              
@@ -39,4 +24,26 @@ $(document).ready(function(){
             $bgobj.css({'background-position-y': coords });
         });
     });
-});
+}
+
+function setupSidePages() {
+    console.log('\'Allo \'Allo!');
+
+    $('.tell-me-more').on('click', showSidePage);
+
+    $('.user-research-page').swipe({
+        swipeLeft: showSidePage
+    });
+
+    $('.tell-me-less').on('click', hideSidePage);
+
+    $('.side-page').swipe({
+        swipeRight: hideSidePage
+    });
+}
+
+$(document).ready(setupSidePages);
+
+if (!iPad) {
+    $(document).ready(setupParallax);
+}

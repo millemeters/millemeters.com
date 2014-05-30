@@ -111,8 +111,8 @@ html.side .side-page .inner-page {
 /* styles */
 body {
     background: #fafafa;
-    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 200;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
     color: #333;
 }
 
@@ -123,6 +123,7 @@ body {
     overflow-x: hidden;
 
     h1 {
+        font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-weight: 100;
         text-transform:uppercase;
         letter-spacing: 0.0625em;
@@ -156,6 +157,7 @@ body {
         float: right;
         text-decoration: none;
         border: 0;
+        color: black;
     }
 
     #logo {
@@ -176,7 +178,7 @@ body {
     }
 
     a:hover {
-        padding-top: 1px;
+        padding-top: 3px;
         border-top: 2px solid #eee;
         border-bottom: none;
     }
@@ -313,7 +315,6 @@ body {
 .contact-page {
     position: relative;
     background-color: black;
-    min-height: 70%;
     margin-top: 5%;
     color: white;
     background: url('../images/10-contact.jpg') no-repeat;
@@ -328,18 +329,11 @@ body {
             padding-bottom: 4%;
             margin-bottom: 0;
         }
+    }
 
-/*
-        a {
-            border: none;
-            background: none;
-            color: white;
-        }
-
-        a:hover, a:focus {
-            text-decoration: underline;
-        }
-*/
+    .contact-details {
+        position: absolute;
+        bottom: 0;
     }
 }
 
