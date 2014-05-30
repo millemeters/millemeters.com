@@ -145,6 +145,37 @@ body {
 
 
 }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    .page h1 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 100;
+    }
+
+    .page h1 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 100;
+    }
+    .page h2, .page p {
+        font-weight: 200;
+    }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+    .page h1 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 100;
+    }
+
+    .page h1 {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 100;
+    }
+    .page h2, .page p {
+        font-weight: 200;
+    }
+}
+
 #menu {
     font-weight: 100;
     font-size: 0.8em;
@@ -301,15 +332,6 @@ body {
     background: url('../images/08-process.jpg') no-repeat;
     background-size:cover;
     color: white;
-
-    background-position-y: bottom;
-    background-position-x: left;
-    
-    position: relative;
-    .inner-page {
-        position: absolute;
-        bottom: 0;
-    }
 }
 
 .contact-page {
