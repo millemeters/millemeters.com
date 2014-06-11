@@ -8,7 +8,6 @@
 // 'test/spec/**/*.js'
 
 module.exports = function (grunt) {
-
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
 
@@ -346,7 +345,35 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+        buildcontrol: {
+            options: {
+                dir: 'dist',
+                commit: true,
+                push: true,
+                message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+            },
+            pages: {
+                options: {
+                    remote: 'git@github.com:millemeters/millemeters.github.io.git',
+                    branch: 'gh-pages'
+                }
+            },
+            // heroku: {
+            //     options: {
+            //         remote: 'git@heroku.com:example-heroku-webapp-1988.git',
+            //         branch: 'master',
+            //         tag: pkg.version
+            //     }
+            // },
+            // local: {
+            //     options: {
+            //         remote: '../',
+            //         branch: 'build'
+            //     }
+            // }
         }
+
     });
 
 
