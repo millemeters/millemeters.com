@@ -201,6 +201,7 @@ body {
 }
 
 .pages {
+/*  temporarily disabled for mvp
     a {
         border-bottom: 2px solid #eee;
         padding-bottom: 5px;
@@ -212,6 +213,11 @@ body {
         padding-top: 3px;
         border-top: 2px solid #eee;
         border-bottom: none;
+    }
+*/
+    a {
+        text-decoration: none;
+        color: white;
     }
 }
 

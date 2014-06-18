@@ -41,9 +41,10 @@ function setupSidePages() {
         swipeRight: hideSidePage
     });
 }
-
+/*
+//temporarily disabled for mvp
 $(document).ready(setupSidePages);
-
+*/
 if (!iPad) {
     $(document).ready(setupParallax);
 }
