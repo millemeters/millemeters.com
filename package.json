@@ -31,6 +31,7 @@
   "scripts": {
     "postinstall": "./node_modules/grunt/bin/grunt build",
     "start": "grunt serve",
+    "build": "grunt build",
     "push": "grunt buildcontrol:pages"
   },
   "engines": {
