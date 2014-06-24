@@ -5,7 +5,13 @@ function hideSidePage() {
     $('.pages').removeClass('not-scrollable');
 }
 
-function showSidePage() {
+function showSidePage(event) {
+    var sidePageName = $(event.target).attr('data-side-page-target'),
+        sidePage = $('[data-side-page='+sidePageName+']');
+
+    $('.side-page').removeClass('visible');
+    sidePage.addClass('visible');
+
     $('html').addClass('side');
     $('.pages').addClass('not-scrollable');
 }

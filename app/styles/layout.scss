@@ -63,7 +63,7 @@ html.side .pages {
   }
 }
 
-html.side .side-page {
+html.side .side-page.visible {
     z-index: 1000;
     position: fixed;
     top: 0;
@@ -368,9 +368,7 @@ body {
 
 html.side .side-page {
     color: #bbb;
-}
 
-#user-research-details {
     .tell-me-less {
         padding-bottom: 20px;
         clear: both;
