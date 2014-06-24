@@ -201,7 +201,6 @@ body {
 }
 
 .pages {
-/*  temporarily disabled for mvp
     a {
         border-bottom: 2px solid #eee;
         padding-bottom: 5px;
@@ -214,7 +213,7 @@ body {
         border-top: 2px solid #eee;
         border-bottom: none;
     }
-*/
+
     a {
         text-decoration: none;
         color: white;
@@ -368,4 +367,68 @@ body {
 /* side pages */
 
 html.side .side-page {
+    color: #bbb;
+}
+
+#user-research-details {
+    .tell-me-less {
+        padding-bottom: 20px;
+        clear: both;
+        cursor: pointer;
+
+        span {
+            font-size: 0.7em;
+            color: #eee;
+            margin-left: 10px;
+            font-weight: 100;
+        }
+    }
+    h2 {
+        font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 100;
+        text-transform:uppercase;
+        letter-spacing: 0.0625em;
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+
+    .grid-item {
+        width: 250px;
+        height: 600px;
+        margin-top: 50px;
+        float: left;
+        margin-right: 75px;
+
+        img {
+            width: 250px;
+            height: 250px;
+            background: white;
+        }
+        
+        h3 {
+            font-family: Helvetica, sans-serif;
+            font-size: 0.50em;
+            margin-bottom: 0;
+            color: #ddd;
+        }
+
+        p {
+            font-family: Helvetica, sans-serif;
+            margin-top: 5px;
+            font-size: 0.55em;
+        }
+
+        p.example {
+            font-size: 0.45em;
+            color: #ddd;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover, a:focus {
+            text-decoration: none;
+        }
+    }
 }
