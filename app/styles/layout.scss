@@ -1,4 +1,4 @@
-$durationSlideInAnimation: 0.1s;
+/* $durationSlideInAnimation: 0.1s; */
 
 html {
     height: 100%;
@@ -26,10 +26,6 @@ body {
     min-height: 110%;
 }
 
-.inner-page {
-    padding: 20px;
-}
-
 .side-page {
     display: none;
 }
@@ -51,7 +47,7 @@ html.side .pages {
     right: 80%;
     width: 100%;
 
-    animation: slide-out-page $durationSlideInAnimation;
+/*    animation: slide-out-page $durationSlideInAnimation; */
 
     background-color: #fff;
 }
@@ -79,7 +75,7 @@ html.side .side-page.visible {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 
-    animation: slide-in-side-page $durationSlideInAnimation;
+/*    animation: slide-in-side-page $durationSlideInAnimation; */
 }
 
 @keyframes slide-in-side-page {
@@ -155,6 +151,7 @@ body {
 
     background-color: #fff;
     opacity: 0.3;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
 
     display: none;
 }
@@ -259,8 +256,8 @@ html.side .overlay {
 .hero-page {
     background: url('../images/00-hero.jpg') no-repeat;
     background-size:cover;
-
     h1 {
+        padding: 0 2%;
         letter-spacing: inherit;
         font-weight: 100;
         margin-top: 2.5em;
@@ -294,6 +291,7 @@ html.side .overlay {
     background-color: white;
 
     .inner-page {
+        padding: 2%;
         position: absolute;
         bottom: 0;
         padding-bottom: 0;
@@ -308,6 +306,10 @@ html.side .overlay {
     background: url('../images/03-analyze.jpg') no-repeat;
     background-size:cover;
     color: white;
+
+    .inner-page {
+        padding: 0 5%;
+    }
 }
 
 .intermission-2-page {
@@ -328,6 +330,9 @@ html.side .overlay {
     background-size:cover;
 
     color: white;
+    .inner-page {
+        padding: 0 2%;
+    }
 }
 
 .conceptualize-page {
@@ -340,6 +345,7 @@ html.side .overlay {
 
     position: relative;
     .inner-page {
+        padding: 0 5%;
         position: absolute;
         bottom: 5%;
     }
@@ -352,6 +358,10 @@ html.side .overlay {
     background: url('../images/09-design.jpg') no-repeat;
     background-size:cover;
     color: white;
+
+    .inner-page {
+        padding: 0 2%;
+    }
 }
 
 .process-page {
@@ -359,6 +369,10 @@ html.side .overlay {
     background: url('../images/08-process.jpg') no-repeat;
     background-size:cover;
     color: white;
+
+    .inner-page {
+        padding: 0 5%;
+    }
 }
 
 .contact-page {
