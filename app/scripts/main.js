@@ -1,5 +1,3 @@
-var iPad = navigator.platform.indexOf('iPad') !== -1;
-
 function hideSidePage() {
     $('html').removeClass('side');
     $('.pages').removeClass('not-scrollable');
@@ -50,12 +48,18 @@ function setupSidePages() {
 
 $(document).ready(setupSidePages);
 
-if (!iPad) {
-    $(document).ready(setupParallax);
-}
-
 $(document).ready(function() {
-    $('img.lazy').lazyload({
+    $('.page.lazy').lazyload({
+        threshold: 1000,
+        container: $('.pages')
+    });
+
+    $('.side-page img.lazy').lazyload({
         event: 'show-side-page'
     });
 });
+
+var iPad = navigator.platform.indexOf('iPad') !== -1;
+if (!iPad) {
+    $(document).ready(setupParallax);
+}

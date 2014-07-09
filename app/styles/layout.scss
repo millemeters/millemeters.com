@@ -304,7 +304,6 @@ html.side .overlay {
 
 .analyze-page {
     background: white;
-    background: url('../images/03-analyze.jpg') no-repeat;
     background-size:cover;
     color: white;
 
@@ -327,7 +326,7 @@ html.side .overlay {
     @extend .bordered-page;
 
     background: black;
-    background: url('../images/05-communicate.jpg') no-repeat;
+    background: no-repeat;
     background-size:cover;
 
     color: white;
@@ -338,7 +337,7 @@ html.side .overlay {
 
 .conceptualize-page {
     background: black;
-    background: url('../images/06-conceptualize.jpg') no-repeat;
+    background: no-repeat;
     background-size:cover;
     background-position-x: right;
 
@@ -356,7 +355,7 @@ html.side .overlay {
     @extend .bordered-page;
 
     background: black;
-    background: url('../images/09-design.jpg') no-repeat;
+    background: no-repeat;
     background-size:cover;
     color: white;
 
@@ -367,7 +366,7 @@ html.side .overlay {
 
 .process-page {
     background: black;
-    background: url('../images/08-process.jpg') no-repeat;
+    background: no-repeat;
     background-size:cover;
     color: white;
 
@@ -381,7 +380,7 @@ html.side .overlay {
     background-color: black;
     margin-top: 5%;
     color: white;
-    background: url('../images/10-contact.jpg') no-repeat;
+    background: no-repeat;
     background-position: left bottom;
     background-size:cover;
 
