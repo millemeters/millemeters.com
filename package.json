@@ -32,7 +32,8 @@
     "postinstall": "./node_modules/grunt/bin/grunt build",
     "start": "grunt serve",
     "build": "grunt build",
-    "push": "grunt buildcontrol:pages"
+    "push": "grunt buildcontrol:pages",
+    "deploy": "grunt build; grunt buildcontrol:pages"
   },
   "engines": {
     "node": ">=0.10.0"
