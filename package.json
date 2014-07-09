@@ -33,7 +33,7 @@
     "start": "grunt serve",
     "build": "grunt build",
     "push": "grunt buildcontrol:pages",
-    "deploy": "grunt build; grunt buildcontrol:pages"
+    "deploy": "grunt build; cp app/CNAME dist/; grunt buildcontrol:pages"
   },
   "engines": {
     "node": ">=0.10.0"
