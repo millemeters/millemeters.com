@@ -14,6 +14,8 @@ function showSidePage(event) {
 
     $('html').addClass('side');
     $('.pages').addClass('not-scrollable');
+
+    sidePage.find('img.lazy').trigger('show-side-page');
 }
 
 function setupParallax() {
@@ -51,3 +53,9 @@ $(document).ready(setupSidePages);
 if (!iPad) {
     $(document).ready(setupParallax);
 }
+
+$(document).ready(function() {
+    $('img.lazy').lazyload({
+        event: 'show-side-page'
+    });
+});
