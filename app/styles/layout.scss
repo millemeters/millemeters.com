@@ -52,6 +52,8 @@ html.side .pages {
     width: 100%;
 
     animation: slide-out-page $durationSlideInAnimation;
+
+    background-color: #fff;
 }
 
 @keyframes slide-out-page {
@@ -71,7 +73,7 @@ html.side .side-page.visible {
 
     width: 80%;
     height: 100%;
-    display: block;    
+    display: block;
 
     overflow-x: hidden;
     overflow-y: scroll;
@@ -142,8 +144,28 @@ body {
         margin-top: 2em;
         line-height: 1.5;
     }
+}
 
+.overlay {
+    z-index: 999;
+    position: fixed;
+    right: 80%;
+    width: 100%;
+    height: 100%;
 
+    background-color: #fff;
+    opacity: 0.3;
+
+    display: none;
+}
+
+html.side .overlay {
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0;
+    }
 }
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
@@ -230,7 +252,7 @@ body {
     -moz-box-shadow:    0 -25px 47px 2px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0 -25px 47px 2px rgba(0, 0, 0, 0.15);
     box-shadow:         0 -25px 47px 2px rgba(0, 0, 0, 0.15);
-}   
+}
 
 /* pages */
 
@@ -402,7 +424,7 @@ html.side .side-page {
             height: 250px;
             background: white;
         }
-        
+
         h3 {
             font-family: Helvetica, sans-serif;
             font-size: 0.50em;
